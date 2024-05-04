@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+  
+    <title>Product</title>
+
+</head>
+
+<body>
+
+    <div class="main-container">
+        <div class="left-container">
+            <div class="main-content ">
+                <img src="images/image1.png" class="js-image" alt="image">
+            </div>
+            <div class="image-container">
+                <img src="images/image1.png" onclick="displayImage('image1.png')" class="image-one" alt="">
+                <img src="images/image2.png" onclick="displayImage('image2.png')" class="image-one" alt="">
+                <img src="images/image3.png" onclick="displayImage('image3.png')" class="image-one" alt="">
+                <img src="images/image4.png" onclick="displayImage('image4.png')" class="image-one" alt="">
+
+            </div>
+        </div>
+        <div class="right-container">
+            <div class="product-name">
+                <p class="product-vendor">Marmeto</p>
+                <p class="product-title">Embrace Sideboard</p>
+            </div>
+            <hr>
+            <div class="price-details">
+                <div class="left-container-price">
+                    <p class="dscount-prce"><span>$</span> <span id="org-price">12999.00</span></p>
+                    <p class="orgnal-prce"><del><span>$</span><span id="ds-price">19999.00</span></del></p>
+                </div>
+                <div class="right-container-price">
+                   
+                </div>
+            </div>
+            <hr>
+            <div class="color-container">
+                <p>Choose a Color</p>
+                <div class="color-box">
+                    <div class="one" data-selected-color="yellow"></div>
+                    <div class="two" data-selected-color="green"></div>   
+                    <div class="three" data-selected-color="blue"></div>
+                    <div class="four" data-selected-color="pink"></div>
+                </div>
+                  
+            </div>
+            <hr>
+            <div class="size-container">
+                <p>Choose a size</p>
+                <form class="size-box">
+                    <div class="size-box-container">
+                        <input type="radio" id="small" name="size" value="small" >
+                        <label for="small">Small</label>
+                    </div>
+                    <div class="size-box-container">
+                        <input type="radio" id="medium" name="size" value="medium">
+                        <label for="medium">Medium</label>
+                    </div>
+                    <div class="size-box-container">
+                        <input type="radio" id="large" name="size" value="large">
+                        <label for="large">Large</label>
+                    </div>
+                    <div class="size-box-container">
+                        <input type="radio" id="extra-large" name="size" value="extra-large">
+                        <label for="extra-large">Extra Large</label>
+                    </div>
+                    <div class="size-box-container">
+                        <input type="radio" id="XXL" name="size" value="xxl">
+                        <label for="XXL">XXL</label>
+                    </div>
+                </form>
+            </div>
+            <div class="add-to-cart-container" onclick="addToCart()">
+                <div class="count-value">
+                    <span class="js-sub" onclick="sub()">-</span>
+                    <span class="js-ouput-value">1</span>
+                    <span class="js-add" onclick="add()">+</span>
+                </div>
+                <div class="add-to-cart-button">
+                    <img src="./images/frame.png" alt="">
+                    <span>Add to cart</span>
+                </div>
+            </div>
+
+            <div class="add-to-cart-description">
+                <p class="add-to-cart-description-paragraph"></p>
+            </div>
+
+            <hr>
+            <p class="description">
+                The Embrace Sideboard is a stylish wear. With a top cloth designed to provide superior protection and
+                look great, this storage solution is both functional and attractive. It fits seamlessly into any home
+                decor, with clean lines and a timeless look. Crafted from premium materials for a combination of style,
+                durability, and reliability.
+            </p>
+
+
+
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
